@@ -1,0 +1,374 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Emotional Voice Conversion: Theory, Databases and ESD</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <style>
+    .menu-index {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
+</head>
+
+<body>
+	
+ <div class="menu-container"></div>
+  <div class="content-container">
+    <div class="content">
+      <div class="content-table flex-column">
+        
+<h2 class="add-top-margin">Experiments & Demos</h2>
+<hr>
+<br>
+There are some demos that preformed on ESD database from previous publications, those are: 
+</br>
+<strong>[1] VAWGAN-EVC <a href="https://github.com/KunZhou9646/Speaker-independent-emotional-voice-conversion-based-on-conditional-VAW-GAN-and-CWT">Github</a></strong>
+<strong>[2] CycleGAN-EVC <a href="https://github.com/KunZhou9646/emotional-voice-conversion-with-CycleGAN-and-CWT-for-Spectrum-and-F0">Github</a></strong>
+<strong>[3] StarGAN-EVC <a href="https://github.com/glam-imperial/EmotionalConversionStarGAN">Github</a></strong>
+<br>	    
+<table style="height: 120px;" border="2" width="111">
+<tbody>
+ <th colspan=8><h4>Neutral-to-Angry</h4></th>
+<tr>
+<td style="text-align: center; width: 100px;">Source (Neutral)</td>
+<td style="text-align: center; width: 100px;">VAWGAN-EVC</td>
+<td style="text-align: center; width: 100px;">CycleGAN-EVC</td>
+<td style="text-align: center; width: 100px;">Target (Angry)</td>
+</tr>
+<tr>
+<td style="width: 100px;"><audio controls="controls">
+			  <source src="audio/source/0013_000002.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+<td style="width: 100px;"><audio controls="controls">
+			 <source src="audio/vawgan/Neutral-Angry-0013_000002.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/cyclegan/Neutral-Angry-0013_000002.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/target/Neutral-Angry-0013_000002.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+
+</tr>
+<tr>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/source/0013_000017.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/vawgan/Neutral-Angry-0013_000017.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/cyclegan/Neutral-Angry-0013_000017.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/target/Neutral-Angry-0013_000017.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+
+</tr>
+
+<tr>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/source/Neutral-Angry-0013_000020.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/vawgan/Neutral-Angry-0013_000020.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/cyclegan/Neutral-Angry-0013_000020.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/target/Neutral-Angry-0013_000020.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+
+</tr>
+
+
+<tbody>
+ <th colspan=8><h4>Neutral-to-Happy</h4></th>
+<tr>
+<td style="text-align: center; width: 100px;">Source (Neutral)</td>
+<td style="text-align: center; width: 100px;">VAWGAN-EVC</td>
+<td style="text-align: center; width: 100px;">CycleGAN-EVC</td>
+<td style="text-align: center; width: 100px;">Target (Happy)</td>
+</tr>
+<tr>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/source/0013_000002.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/vawgan/Neutral-Happy-0013_000002.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/cyclegan/Neutral-Happy-0013_000002.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/target/Neutral-Happy-0013_000002.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+
+</tr>
+<tr>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/source/0013_000007.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/vawgan/Neutral-Happy-0013_000007.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/cyclegan/Neutral-Happy-0013_000007.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/target/Neutral-Happy-0013_000007.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+
+</tr>
+
+<tr>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/source/0013_000012.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/vawgan/Neutral-Happy-0013_000012.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/cyclegan/Neutral-Happy-0013_000012.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/target/Neutral-Happy-0013_000012.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+
+</tr>
+
+<tbody>
+ <th colspan=8><h4>Neutral-to-Sad</h4></th>
+<tr>
+<td style="text-align: center; width: 100px;">Source (Neutral)</td>
+<td style="text-align: center; width: 100px;">VAWGAN-EVC</td>
+<td style="text-align: center; width: 100px;">CycleGAN-EVC</td>
+<td style="text-align: center; width: 100px;">Target (Sad)</td>
+</tr>
+<tr>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/source/0013_000001.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/vawgan/Neutral-Sad-0013_000001.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/cyclegan/Neutral-Sad-0013_000001.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/target/Neutral-Sad-0013_000001.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+
+</tr>
+<tr>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/source/0013_000003.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/vawgan/Neutral-Sad-0013_000003.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/cyclegan/Neutral-Sad-0013_000003.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/target/Neutral-Sad-0013_000003.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+
+</tr>
+<tr>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/source/0013_000011.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/vawgan/Neutral-Sad-0013_000011.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/cyclegan/Neutral-Sad-0013_000011.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/target/Neutral-Sad-0013_000011.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+
+</tr>
+
+<tbody>
+ <th colspan=8><h4>Neutral-to-Surprise</h4></th>
+<tr>
+<td style="text-align: center; width: 100px;">Source (Neutral)</td>
+<td style="text-align: center; width: 100px;">VAWGAN-EVC</td>
+<td style="text-align: center; width: 100px;">CycleGAN-EVC</td>
+<td style="text-align: center; width: 100px;">Target (Surprise)</td>
+</tr>
+<tr>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/source/0013_000007.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/vawgan/Neutral-Surprise-0013_000007.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/cyclegan/Neutral-Surprise-0013_000007.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/target/Neutral-Surprise-0013_000007.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+</tr>
+<tr>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/source/0013_000010.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/vawgan/Neutral-Surprise-0013_000010.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/cyclegan/Neutral-Surprise-0013_000010.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/target/Neutral-Surprise-0013_000010.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+</tr>
+<tr>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/source/0013_000017.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/vawgan/Neutral-Surprise-0013_000017.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/cyclegan/Neutral-Surprise-0013_000017.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+       <source src="audio/target/Neutral-Surprise-0013_000017.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+</tr>
+
+
+
+</tbody>
+</table>
+
+  <div class="flex-row">
+        <div class="flex-item flex-column">
+        <h2 class="add-top-margin">News</h2>
+        <hr> 
+      
+<li> Feb 2021 - Add speech samples from StarGAN-EVC into our website!
+<li> Jan 2021 - Add speech samples from VAWGAN-EVC and CycleGAN-EVC into our website!
+
+      </hr>
+
+        </h2>
+        </div>
+
+
+
+  <div class="flex-row">
+        <div class="flex-item flex-column">
+        <h2 class="add-top-margin">Invitation</h2>
+        <hr> 
+<figure class="quote">
+  <blockquote>
+    It is not the end. It is the beginning.
+  </blockquote>
+  <figcaption>
+    &mdash; Stephenie Meyer </figcaption>
+</figure>
+
+We will be continuing to update and include more speech samples into this website as long as our research on "emotional voice conversion" is going on. If you are doing emotional voice conversion with our ESD database, you are welcome to put your speech samples on this website. Please feel free to contact me with: <a href = "mailto:zhoukun@u.nus.edu">zhoukun@u.nus.edu</a>
+      </hr>
+
+        </h2>
+        </div>
+
+      </div>
+
+<p>
+	<div class="flex-row">
+        <div class="flex-item flex-column">
+        <h2 class="add-top-margin">Reference</h2>
+        <hr>
+<br>
+<strong>[1] VAWGAN-EVC: </strong>
+Kun  Zhou,  Berrak  Sisman,  and  Haizhou  Li, "VAW-GAN for  Disentanglement  and  Recomposition  of  Emotional  Elements  in  Speech", In IEEE Spoken Language Workshop (SLT), 2021
+</br>
+<br>
+<strong>[2] CycleGAN-EVC: </strong>
+Kun  Zhou,  Berrak  Sisman,  and  Haizhou  Li, "Transforming  Spectrum  and  Prosody  for  Emotional  Voice Conversion  with  Non-Parallel  Training  Data",  Proc.  odyssey  2020  the  speaker  and  language  recognition workshop, 2020, pp. 230–237.
+</br>
+
+<br>
+<strong>[3] StarGAN-EVC: </strong>
+Rizos, Georgios, Alice Baird, Max Elliott, and Björn Schuller, "Stargan for Emotional Speech Conversion: Validated by Data Augmentation of End-To-End Emotion Recognition." In IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2020.
+</br>
+        </h2>
+        </div>
+
+      </div>
+ 
+
+		
+      </div>
+    </div>  
+  </div>	
+</body>
+</html>

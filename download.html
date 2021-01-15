@@ -1,0 +1,287 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Emotional Voice Conversion: Theory, Databases and ESD</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <style>
+    .menu-index {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
+</head>
+
+<body>
+	
+ <div class="menu-container"></div>
+  <div class="content-container">
+    <div class="content">
+      <div class="content-table flex-column">
+        
+<h2 class="add-top-margin">Database Sample</h2>
+<hr>
+<br>	    
+<table style="height: 120px;" border="2" width="111">
+<tbody>
+ <th colspan=8><h4>Mandarin Speech Samples</h4></th>
+<tr>
+<td style="text-align: center; width: 100px;">Neutral</td>
+<td style="text-align: center; width: 100px;">Angry</td>
+<td style="text-align: center; width: 100px;">Happy</td>
+<td style="text-align: center; width: 100px;">Sad</td>
+<td style="text-align: center; width: 100px;">Surprise</td>
+</tr>
+<tr>
+<td style="width: 100px;"><audio controls="controls">
+			  <source src="audio/0003_000008.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+<td style="width: 100px;"><audio controls="controls">
+			  <source src="audio/0003_000358.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0003_000708.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0003_001058.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0003_001408.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+
+</tr>
+<tr>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0006_000008.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0006_000358.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0006_000708.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0006_001058.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0006_001408.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+
+<tr>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0010_000008.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0010_000358.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0010_000708.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0010_001058.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0010_001408.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+
+</tr>
+
+<tr>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0007_000008.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0007_000358.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0007_000708.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0007_001058.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0007_001408.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+
+</tr>
+
+
+</tbody>
+</table>
+
+<table style="height: 120px;" border="2" width="111">
+<tbody>
+ <th colspan=8><h4>English Speech Samples</h4></th>
+<tr>
+<td style="text-align: center; width: 100px;">Neutral</td>
+<td style="text-align: center; width: 100px;">Angry</td>
+<td style="text-align: center; width: 100px;">Happy</td>
+<td style="text-align: center; width: 100px;">Sad</td>
+<td style="text-align: center; width: 100px;">Surprise</td>
+</tr>
+<tr>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0013_000001.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0013_000351.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0013_000701.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0013_001051.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0013_001401.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+
+</tr>
+<tr>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0016_000001.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0016_000351.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0016_000701.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0016_001051.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0016_001401.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+
+</tr>
+<tr>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0020_000001.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0020_000351.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0020_000701.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0020_001051.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0020_001401.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+
+</tr>
+<tr>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0019_000001.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0019_000351.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0019_000701.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0019_001051.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+<td style="width: 100px;"><audio controls="controls">
+        <source src="audio/0019_001401.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+      </audio></td>
+
+</tr>
+
+
+</tbody>
+</table>
+
+
+<p>
+</div>
+	    
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+	    <h2 class="add-top-margin">Download the Database</h2>  
+            <hr>
+            <p class="text">
+             The ESD database is free to use for research purpose. The whole database can be downloaded <a href="https://github.com/HLTSingapore/Emotional-Speech-Data">here</a>.        	      
+	    </p>  
+</p> 	      
+      </div>
+      
+<div class="flex-row">
+        <div class="flex-item flex-column">
+        <h2 class="add-top-margin">Publications with ESD database</h2>
+        <hr>
+<li><strong><font size="3">Seen and Unseen emotional style transfer for voice conversion with a new emotional speech dataset</font></strong> [<a href="https://arxiv.org/abs/2010.14794">paper</a>]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="2">Kun Zhou, Berrak Sisman, Rui Liu, Haizhou Li. (<strong>Submitted to IEEE ICASSP 2021</strong>, Toronto, Canada)<br></font></li>
+<li><strong><font size="3">VAW-GAN for Disentanglement and Recomposition of Emotional Elements in Speech</font></strong> [<a href="https://arxiv.org/abs/2011.02314">paper</a>][<a href="https://www2.slideshare.net/KunZhou18/vawgan-for-disentanglement-and-recomposition-of-emotional-elements-in-speech">slides</a>]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="2">Kun Zhou, Berrak Sisman, Haizhou Li. (<strong>IEEE SLT 2021</strong>, Shenzhen, China)<br></font></li>
+        <br>
+         
+
+        </h2>
+        </div> 
+        <div class="flex-row">
+        <div class="flex-item flex-column">
+        <h2 class="add-top-margin">Reference</h2>
+        <hr>
+
+ Please cite the following paper if you use this database:
+        <br>
+         
+
+        </h2>
+        </div>
+    </div>  
+  </div>	
+</body>
+</html>
